@@ -14,7 +14,7 @@ def main():
     try:
         books = int(input("Enter the number of books purchased this month: "))
         if books < 0:
-            print("Books cannot be negative. Please try again.")
+            print("The number of books cannot be negative. Please try again.")
             return
         
         if books >= 8:
