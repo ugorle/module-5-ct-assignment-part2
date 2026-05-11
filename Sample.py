@@ -13,6 +13,9 @@ display the number of points awarded.
 def main():
     try:
         books = int(input("Enter the number of books purchased this month: "))
+        if books < 0:
+            print("Books cannot be negative. Please try again.")
+            return
         
         if books >= 8:
             points = 60
